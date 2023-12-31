@@ -8,6 +8,9 @@
 a {
   text-decoration: none;
 }
+ul {
+  list-style: none;
+}
 body {
   background-color: black;
 }
@@ -16,9 +19,9 @@ body {
   width: 100%;
   background-color: black;
   border-bottom: 1px solid gray;
-  position: relative;
   display: flex;
   justify-content: center;
+  clear: both;
 }
 #inner {
   width: 768px;
@@ -47,9 +50,9 @@ header h1 {
 /* logo */
 #logo {
   height: 60px;
-  line-height: 55px;
-  position: absolute;
-  left: 20px;
+  line-height: 60px;
+  float: left;
+  margin-left: 20px;
 }
 /* ~logo */
 
@@ -57,11 +60,8 @@ header h1 {
 nav {
   line-height: 60px;
   height: 60px;
-}
-nav > ul {
-  list-style: none;
-  position: absolute;
-  right: 20px;
+  float: right;
+  margin-right: 20px;
 }
 nav > ul > li {
   float: left;
